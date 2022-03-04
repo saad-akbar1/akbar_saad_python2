@@ -16,7 +16,6 @@ app.config['SECRET_KEY'] = 'mysecretkey'
 ##########################################
 pymysql.install_as_MySQLdb()
 basedir = os.path.abspath(os.path.dirname(__file__))
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.sqlite')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'MySQL+pymysql://'
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:password123@localhost/puppies'
 #app.config['SQLALCHEMY_DATABASE_URI'] = pymysql.connect(host="localhost", user="root", passwd="4242")
